@@ -9,7 +9,7 @@ const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
     
 // Realiza una solicitud GET a la URL del JSON
-fetch('sismologia.json')
+fetch('https://www.ign.es/ign/RssTools/sismologia.xml')
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al recuperar el JSON');
